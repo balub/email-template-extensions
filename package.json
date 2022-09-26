@@ -1,0 +1,20 @@
+{
+  "name": "email-template-extensions",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prebuild": "rm -rf dist .parcel-cache",
+    "build:tailwind": "tailwindcss build src/main.css -c ./tailwind.config.js -o dist/main.css",
+    "dev": "parcel src/popup.html",
+    "build": "rm -rf dist && mkdir dist && cp src/manifest.json dist/ && parcel build src/popup.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "parcel": "^2.7.0",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  }
+}
