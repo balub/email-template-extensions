@@ -5,7 +5,7 @@
   "scripts": {
     "prebuild": "rm -rf dist .parcel-cache",
     "build:tailwind": "tailwindcss build src/main.css -c ./tailwind.config.js -o dist/main.css",
-    "dev": "parcel src/popup.html",
+    "dev": "cp src/manifest.json dist/ && parcel src/popup.html",
     "build": "rm -rf dist && mkdir dist && cp src/manifest.json dist/ && parcel build src/popup.html"
   },
   "keywords": [],
