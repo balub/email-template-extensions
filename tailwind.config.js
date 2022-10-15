@@ -12,6 +12,9 @@ module.exports = {
             white: "#FFFFFF",
         },
       },
+      fontFamily: {
+        sourceSans: "'Source Sans Pro', sans-serif",
+      },
     },
   },
   plugins: [],
